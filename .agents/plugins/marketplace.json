@@ -1,0 +1,20 @@
+{
+  "name": "agent-marketplace-starter",
+  "interface": {
+    "displayName": "Agent Marketplace Starter"
+  },
+  "plugins": [
+    {
+      "name": "agent-marketplace-starter",
+      "source": {
+        "source": "local",
+        "path": "./plugins/agent-marketplace-starter"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "agent-marketplace-starter",
+  "version": "0.1.0",
+  "description": "Starter plugin for publishing a Codex marketplace from GitHub.",
+  "author": {
+    "name": "Marketplace Publisher",
+    "url": "https://github.com/example"
+  },
+  "homepage": "https://github.com/example/agent-marketplace-starter",
+  "repository": "https://github.com/example/agent-marketplace-starter",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "marketplace",
+    "plugin",
+    "starter"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agent Marketplace Starter",
+    "shortDescription": "A publishable Codex marketplace plugin starter.",
+    "longDescription": "Agent Marketplace Starter demonstrates the repository layout needed to publish a Codex marketplace plugin from GitHub.",
+    "developerName": "Marketplace Publisher",
+    "category": "Productivity",
+    "capabilities": [
+      "Skills"
+    ],
+    "defaultPrompt": [
+      "Explain this plugin repository layout.",
+      "Help me adapt this starter plugin.",
+      "Review my marketplace manifest."
+    ]
+  }
+}
