@@ -1,14 +1,14 @@
 {
-  "name": "ai-trend-report",
+  "name": "harness-engineering-report",
   "interface": {
     "displayName": "Harness Engineering Report"
   },
   "plugins": [
     {
-      "name": "ai-trend-report",
+      "name": "harness-engineering-report",
       "source": {
         "source": "local",
-        "path": "./plugins/ai-trend-report"
+        "path": "./plugins/harness-engineering-report"
       },
       "policy": {
         "installation": "AVAILABLE",

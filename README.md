@@ -10,22 +10,22 @@ This repository publishes a Codex marketplace plugin that researches Harness Eng
 |   `-- plugins/
 |       `-- marketplace.json
 `-- plugins/
-    `-- ai-trend-report/
+    `-- harness-engineering-report/
         |-- .codex-plugin/
         |   `-- plugin.json
         |-- scripts/
         |   `-- render_report.py
         `-- skills/
-            `-- ai-trend-report/
+            `-- harness-engineering-report/
                 `-- SKILL.md
 ```
 
 ## How It Works
 
 - `.agents/plugins/marketplace.json` is the marketplace catalog.
-- `plugins/ai-trend-report/.codex-plugin/plugin.json` is the plugin manifest.
-- `plugins/ai-trend-report/skills/` contains the Harness Engineering report workflow.
-- `plugins/ai-trend-report/scripts/render_report.py` renders Markdown to HTML and optionally PDF.
+- `plugins/harness-engineering-report/.codex-plugin/plugin.json` is the plugin manifest.
+- `plugins/harness-engineering-report/skills/` contains the Harness Engineering report workflow.
+- `plugins/harness-engineering-report/scripts/render_report.py` renders Markdown to HTML and optionally PDF.
 
 ## Publish To GitHub
 
@@ -36,7 +36,7 @@ git init
 git add .
 git commit -m "Create Harness Engineering report plugin"
 git branch -M main
-git remote add origin https://github.com/YOUR_ORG/ai-trend-report.git
+git remote add origin https://github.com/joongkyoonlee/harness-engineering-report.git
 git push -u origin main
 ```
 
@@ -45,14 +45,14 @@ git push -u origin main
 After publishing, another user can register this marketplace by adding the repository's marketplace root.
 
 ```bash
-codex plugin marketplace add https://github.com/YOUR_ORG/ai-trend-report
-codex plugin add ai-trend-report@ai-trend-report
+codex plugin marketplace add https://github.com/joongkyoonlee/harness-engineering-report
+codex plugin add harness-engineering-report@harness-engineering-report
 ```
 
 If your installed marketplace name differs, check the name in `.agents/plugins/marketplace.json` and use:
 
 ```bash
-codex plugin add ai-trend-report@<marketplace-name>
+codex plugin add harness-engineering-report@<marketplace-name>
 ```
 
 ## Adapting This Starter
@@ -77,7 +77,7 @@ MCP is the best cross-agent compatibility layer because many hosts can consume i
 From the plugin creator skill root, validate the plugin:
 
 ```bash
-python scripts/validate_plugin.py <repo-root>/plugins/ai-trend-report
+python scripts/validate_plugin.py <repo-root>/plugins/harness-engineering-report
 ```
 
 ## License

@@ -1,5 +1,5 @@
 ---
-name: ai-trend-report
+name: harness-engineering-report
 description: Research Harness Engineering topics with varied web searches and create a sourced PDF report.
 ---
 
@@ -93,7 +93,7 @@ Recommended filenames:
 After writing Markdown, use the helper script when available:
 
 ```bash
-python plugins/ai-trend-report/scripts/render_report.py harness-engineering-report.md --pdf harness-engineering-report.pdf --html harness-engineering-report.html
+python plugins/harness-engineering-report/scripts/render_report.py harness-engineering-report.md --pdf harness-engineering-report.pdf --html harness-engineering-report.html
 ```
 
 If browser-based PDF export is unavailable, still provide the Markdown and HTML report and explain that PDF export could not run in the current environment.

@@ -1,13 +1,13 @@
 {
-  "name": "ai-trend-report",
+  "name": "harness-engineering-report",
   "version": "0.2.0",
   "description": "Research Harness Engineering topics and produce a sourced PDF report.",
   "author": {
     "name": "Harness Engineering Report Publisher",
-    "url": "https://github.com/YOUR_ORG"
+    "url": "https://github.com/joongkyoonlee"
   },
-  "homepage": "https://github.com/YOUR_ORG/ai-trend-report",
-  "repository": "https://github.com/YOUR_ORG/ai-trend-report",
+  "homepage": "https://github.com/joongkyoonlee/harness-engineering-report",
+  "repository": "https://github.com/joongkyoonlee/harness-engineering-report",
   "license": "MIT",
   "keywords": [
     "harness",
