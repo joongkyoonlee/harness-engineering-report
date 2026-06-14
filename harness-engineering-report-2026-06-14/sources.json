@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Harness: AI for DevOps, Testing, AppSec, and Cost Optimization",
+    "publisher": "Harness",
+    "date": "accessed 2026-06-14",
+    "url": "https://www.harness.io/",
+    "relevance": "Official product portfolio and positioning for Harness Engineering."
+  },
+  {
+    "title": "Documentation | Harness Developer Hub",
+    "publisher": "Harness Developer Hub",
+    "date": "accessed 2026-06-14",
+    "url": "https://developer.harness.io/docs/",
+    "relevance": "Official documentation entry point."
+  },
+  {
+    "title": "Continuous Delivery Platform with AI Automation",
+    "publisher": "Harness",
+    "date": "accessed 2026-06-14",
+    "url": "https://www.harness.io/products/continuous-delivery",
+    "relevance": "Official CD/GitOps product framing."
+  },
+  {
+    "title": "Internal Developer Portal | Self-Service DevOps by Harness",
+    "publisher": "Harness",
+    "date": "accessed 2026-06-14",
+    "url": "https://www.harness.io/products/internal-developer-portal",
+    "relevance": "Official IDP and Backstage-related product framing."
+  },
+  {
+    "title": "GitInject: Real-World Prompt Injection Attacks in AI-Powered CI/CD Pipelines",
+    "publisher": "arXiv",
+    "date": "2026-06-07",
+    "url": "https://arxiv.org/abs/2606.09935",
+    "relevance": "Recent research on AI-powered CI/CD security risk."
+  },
+  {
+    "title": "What makes a harness a harness: necessary and sufficient conditions for an agent harness",
+    "publisher": "arXiv",
+    "date": "2026-06-08",
+    "url": "https://arxiv.org/abs/2606.10106",
+    "relevance": "Recent conceptual framing of agent harnesses."
+  },
+  {
+    "title": "Meta-Engineering Harnesses for AI-Native Software Production",
+    "publisher": "arXiv",
+    "date": "2026-05-25",
+    "url": "https://arxiv.org/abs/2605.25665",
+    "relevance": "Background on contract-driven AI-native software production."
+  },
+  {
+    "title": "AI doesn't solve the burnout problem. If anything, it amplifies it",
+    "publisher": "ITPro",
+    "date": "2026-03-20",
+    "url": "https://www.itpro.com/software/development/ai-doesnt-solve-the-burnout-problem-if-anything-it-amplifies-it-ai-coding-tools-might-supercharge-software-development-but-working-at-machine-speed-has-a-big-impact-on-developers",
+    "relevance": "Secondary coverage of Harness 2026 State of DevOps Modernization findings."
+  }
+]
