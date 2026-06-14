@@ -1,6 +1,6 @@
-# Agent Marketplace Starter
+# AI Trend Report
 
-This repository is a starter layout for publishing a Codex marketplace plugin from GitHub.
+This repository publishes a Codex marketplace plugin that researches the latest seven days of AI news and creates a sourced PDF trend report.
 
 ## Repository Layout
 
@@ -10,19 +10,22 @@ This repository is a starter layout for publishing a Codex marketplace plugin fr
 |   `-- plugins/
 |       `-- marketplace.json
 `-- plugins/
-    `-- agent-marketplace-starter/
+    `-- ai-trend-report/
         |-- .codex-plugin/
         |   `-- plugin.json
+        |-- scripts/
+        |   `-- render_report.py
         `-- skills/
-            `-- marketplace-starter/
+            `-- ai-trend-report/
                 `-- SKILL.md
 ```
 
 ## How It Works
 
 - `.agents/plugins/marketplace.json` is the marketplace catalog.
-- `plugins/agent-marketplace-starter/.codex-plugin/plugin.json` is the plugin manifest.
-- `plugins/agent-marketplace-starter/skills/` contains Codex skills shipped by the plugin.
+- `plugins/ai-trend-report/.codex-plugin/plugin.json` is the plugin manifest.
+- `plugins/ai-trend-report/skills/` contains the AI trend report workflow.
+- `plugins/ai-trend-report/scripts/render_report.py` renders Markdown to HTML and optionally PDF.
 
 ## Publish To GitHub
 
@@ -31,9 +34,9 @@ Create a new GitHub repository, then push this folder:
 ```bash
 git init
 git add .
-git commit -m "Create Codex marketplace plugin starter"
+git commit -m "Create AI trend report plugin"
 git branch -M main
-git remote add origin https://github.com/YOUR_ORG/agent-marketplace-starter.git
+git remote add origin https://github.com/YOUR_ORG/ai-trend-report.git
 git push -u origin main
 ```
 
@@ -42,19 +45,17 @@ git push -u origin main
 After publishing, another user can register this marketplace by adding the repository's marketplace root.
 
 ```bash
-codex plugin marketplace add https://github.com/YOUR_ORG/agent-marketplace-starter
-codex plugin add agent-marketplace-starter@agent-marketplace-starter
+codex plugin marketplace add https://github.com/YOUR_ORG/ai-trend-report
+codex plugin add ai-trend-report@ai-trend-report
 ```
 
 If your installed marketplace name differs, check the name in `.agents/plugins/marketplace.json` and use:
 
 ```bash
-codex plugin add agent-marketplace-starter@<marketplace-name>
+codex plugin add ai-trend-report@<marketplace-name>
 ```
 
 ## Adapting This Starter
-
-Rename the plugin folder, update `.codex-plugin/plugin.json`, and update the matching entry in `.agents/plugins/marketplace.json`.
 
 For multi-host distribution, keep the core logic portable:
 
@@ -69,7 +70,7 @@ MCP is the best cross-agent compatibility layer because many hosts can consume i
 From the plugin creator skill root, validate the plugin:
 
 ```bash
-python scripts/validate_plugin.py <repo-root>/plugins/agent-marketplace-starter
+python scripts/validate_plugin.py <repo-root>/plugins/ai-trend-report
 ```
 
 ## License
