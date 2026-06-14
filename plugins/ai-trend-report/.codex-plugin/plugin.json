@@ -1,27 +1,28 @@
 {
   "name": "ai-trend-report",
-  "version": "0.1.0",
-  "description": "Research the last seven days of AI news and produce a sourced PDF trend report.",
+  "version": "0.2.0",
+  "description": "Research Harness Engineering topics and produce a sourced PDF report.",
   "author": {
-    "name": "AI Trend Report Publisher",
+    "name": "Harness Engineering Report Publisher",
     "url": "https://github.com/YOUR_ORG"
   },
   "homepage": "https://github.com/YOUR_ORG/ai-trend-report",
   "repository": "https://github.com/YOUR_ORG/ai-trend-report",
   "license": "MIT",
   "keywords": [
-    "ai-news",
-    "ai-trends",
+    "harness",
+    "platform-engineering",
+    "devops",
+    "ci-cd",
     "research",
-    "pdf-report",
-    "web-search"
+    "pdf-report"
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "AI Trend Report",
-    "shortDescription": "Create sourced weekly AI trend PDF reports.",
-    "longDescription": "AI Trend Report searches the web with varied queries, analyzes the most recent seven days of AI news, and creates a concise sourced PDF report.",
-    "developerName": "AI Trend Report Publisher",
+    "displayName": "Harness Engineering Report",
+    "shortDescription": "Create sourced Harness Engineering PDF reports.",
+    "longDescription": "Harness Engineering Report researches Harness-related engineering, DevOps, CI/CD, platform engineering, security, FinOps, and AI-in-SDLC topics, then creates a concise sourced PDF report.",
+    "developerName": "Harness Engineering Report Publisher",
     "category": "Research",
     "capabilities": [
       "Web Research",
@@ -29,9 +30,9 @@
       "PDF Export"
     ],
     "defaultPrompt": [
-      "지난 7일 AI 트렌드를 조사해 PDF 보고서를 만들어줘.",
-      "이번 주 생성형 AI 주요 뉴스를 출처와 함께 요약해줘.",
-      "AI 정책, 모델, 투자, 제품 출시 트렌드를 비교해줘."
+      "Harness Engineering 관련 최신 내용을 조사해 PDF 보고서를 만들어줘.",
+      "Harness의 CI/CD, IDP, 보안, FinOps 흐름을 분석해줘.",
+      "Harness Engineering 관점의 DevOps 트렌드를 정리해줘."
     ]
   }
 }

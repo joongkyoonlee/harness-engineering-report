@@ -1,6 +1,6 @@
-# AI Trend Report
+# Harness Engineering Report
 
-This repository publishes a Codex marketplace plugin that researches the latest seven days of AI news and creates a sourced PDF trend report.
+This repository publishes a Codex marketplace plugin that researches Harness Engineering topics and creates a sourced PDF report.
 
 ## Repository Layout
 
@@ -24,7 +24,7 @@ This repository publishes a Codex marketplace plugin that researches the latest 
 
 - `.agents/plugins/marketplace.json` is the marketplace catalog.
 - `plugins/ai-trend-report/.codex-plugin/plugin.json` is the plugin manifest.
-- `plugins/ai-trend-report/skills/` contains the AI trend report workflow.
+- `plugins/ai-trend-report/skills/` contains the Harness Engineering report workflow.
 - `plugins/ai-trend-report/scripts/render_report.py` renders Markdown to HTML and optionally PDF.
 
 ## Publish To GitHub
@@ -34,7 +34,7 @@ Create a new GitHub repository, then push this folder:
 ```bash
 git init
 git add .
-git commit -m "Create AI trend report plugin"
+git commit -m "Create Harness Engineering report plugin"
 git branch -M main
 git remote add origin https://github.com/YOUR_ORG/ai-trend-report.git
 git push -u origin main
@@ -56,6 +56,13 @@ codex plugin add ai-trend-report@<marketplace-name>
 ```
 
 ## Adapting This Starter
+
+Use it with prompts like:
+
+```text
+Harness Engineering 관련 최신 내용을 조사해 PDF 보고서를 만들어줘.
+Harness의 CI/CD, IDP, 보안, FinOps 흐름을 분석해줘.
+```
 
 For multi-host distribution, keep the core logic portable:
 
