@@ -1,0 +1,19 @@
+{
+  "name": "harness-engineering-report",
+  "description": "Research Harness Engineering topics and produce sourced PDF reports.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Harness Engineering Report Publisher"
+  },
+  "homepage": "https://github.com/joongkyoonlee/harness-engineering-report",
+  "repository": "https://github.com/joongkyoonlee/harness-engineering-report",
+  "license": "MIT",
+  "keywords": [
+    "harness",
+    "platform-engineering",
+    "devops",
+    "ci-cd",
+    "research",
+    "pdf-report"
+  ]
+}

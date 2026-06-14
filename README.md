@@ -1,6 +1,6 @@
 # Harness Engineering Report
 
-This repository publishes a Codex marketplace plugin that researches Harness Engineering topics and creates a sourced PDF report.
+This repository publishes Codex and Claude Code marketplace plugins that research Harness Engineering topics and create sourced PDF reports.
 
 ## Repository Layout
 
@@ -9,8 +9,12 @@ This repository publishes a Codex marketplace plugin that researches Harness Eng
 |-- .agents/
 |   `-- plugins/
 |       `-- marketplace.json
+|-- .claude-plugin/
+|   `-- marketplace.json
 `-- plugins/
     `-- harness-engineering-report/
+        |-- .claude-plugin/
+        |   `-- plugin.json
         |-- .codex-plugin/
         |   `-- plugin.json
         |-- scripts/
@@ -22,8 +26,10 @@ This repository publishes a Codex marketplace plugin that researches Harness Eng
 
 ## How It Works
 
-- `.agents/plugins/marketplace.json` is the marketplace catalog.
-- `plugins/harness-engineering-report/.codex-plugin/plugin.json` is the plugin manifest.
+- `.agents/plugins/marketplace.json` is the Codex marketplace catalog.
+- `.claude-plugin/marketplace.json` is the Claude Code marketplace catalog.
+- `plugins/harness-engineering-report/.codex-plugin/plugin.json` is the Codex plugin manifest.
+- `plugins/harness-engineering-report/.claude-plugin/plugin.json` is the Claude Code plugin manifest.
 - `plugins/harness-engineering-report/skills/` contains the Harness Engineering report workflow.
 - `plugins/harness-engineering-report/scripts/render_report.py` renders Markdown to HTML and optionally PDF.
 
@@ -53,6 +59,22 @@ If your installed marketplace name differs, check the name in `.agents/plugins/m
 
 ```bash
 codex plugin add harness-engineering-report@<marketplace-name>
+```
+
+## Register In Claude Code
+
+Claude Code users can add the repository as a plugin marketplace and install the plugin:
+
+```text
+/plugin marketplace add joongkyoonlee/harness-engineering-report
+/plugin install harness-engineering-report@harness-engineering-report
+```
+
+After installation, run:
+
+```text
+/reload-plugins
+/harness-engineering-report:harness-engineering-report
 ```
 
 ## Adapting This Starter

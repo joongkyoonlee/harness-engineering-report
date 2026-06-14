@@ -1,0 +1,31 @@
+{
+  "name": "harness-engineering-report",
+  "owner": {
+    "name": "joongkyoonlee"
+  },
+  "description": "Claude Code marketplace for the Harness Engineering Report plugin.",
+  "version": "0.1.0",
+  "plugins": [
+    {
+      "name": "harness-engineering-report",
+      "displayName": "Harness Engineering Report",
+      "source": "./plugins/harness-engineering-report",
+      "description": "Research Harness Engineering topics and create sourced PDF reports.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Harness Engineering Report Publisher"
+      },
+      "homepage": "https://github.com/joongkyoonlee/harness-engineering-report",
+      "repository": "https://github.com/joongkyoonlee/harness-engineering-report",
+      "license": "MIT",
+      "category": "engineering",
+      "tags": [
+        "harness",
+        "devops",
+        "ci-cd",
+        "platform-engineering",
+        "pdf-report"
+      ]
+    }
+  ]
+}
