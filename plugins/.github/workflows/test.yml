@@ -1,1 +1,15 @@
+name: Test Automation
 
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 저장소 파일 확인
+        run: |
+          echo "자동화 실행 시작"
+          ls -la
+          echo "자동화 실행 완료"
